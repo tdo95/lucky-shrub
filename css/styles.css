@@ -406,3 +406,16 @@ footer i {
     font-size: 2rem;
 }
 
+/* --------------------Effects----------------- */
+.btn:hover {
+    background-color: white;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,.15);
+    color: var(--primary);
+}
+.worksBtn i {
+    margin-left: 0px;
+    transition: margin-left 2s;
+}
+.worksBtn:hover i {
+    margin-left: 20px;
+}
