@@ -246,7 +246,6 @@ body::after {
     position: relative;
     left: 56px;
 }
-
 .heroImg::before {
     content: '';
     height: calc(100% * .75);
@@ -260,16 +259,150 @@ body::after {
     right: 0;
     
 }
-
-
-
-
-.layoutItems {
+/* --------------------Services----------------- */
+.serviceSection {
+    height: 300px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    column-gap: 4rem;
+    font-size: 2rem;
+    color: black;
+    font-weight: 600;
+}
+.serviceItem {
+    background-color: rgba(0,140,129,.2);
+    width: 30rem;
+    height: 15rem;
+    border-radius: .5rem;
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    column-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 30px 30px 0 rgba(0,0,0,.15);
+}
+.serviceItem i {
+    font-size: 4rem;
+    color: rgba(0,140,129,1);
+}
+/* --------------------About----------------- */
+.aboutSection {
+    height: 500px;
+    background-color: white;
     display: flex;
 }
-.layoutItems article {
-    flex: 1;
+.aboutImg {
+    width: 40%;
+    position: relative;
 }
+.aboutImg img {
+    width: 100%;
+    position: absolute;
+    bottom: 20%;
+}
+.aboutImg::before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    bottom: 20%;
+    left: 10%;
+    border-radius: 5px;
+    background-color: rgba(0,140,129,.4);
+}
+.aboutText {
+    width: 60%;
+    padding: 0 3rem;
+}
+.aboutText span {
+    margin-bottom: 3rem;
+    display: block;
+
+}
+.aboutText h2 {
+    margin: 2rem 0;
+    font-size: 2.5rem;
+
+}
+.aboutText p {
+    margin: 1rem 0;
+    line-height: 3rem;
+}
+.aboutText .btn {
+    margin-top: 20px;
+}
+/* --------------------Booking----------------- */
+.bookingSection {
+    height: 500px;
+    background-color: white;
+    text-align: center;
+    padding-top: 4rem;
+}
+.bookingSection h2 {
+    margin: 3rem 0;
+    font-size: 2.5rem;
+}
+.bookingForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    background-color: rgba(0,140,129,.4);
+    padding: 2rem 0;
+    padding-top: 4rem;
+    border-radius: .5rem;
+}
+.bookingForm label {
+    width: 50%;
+}
+.bookingForm input, .bookingForm textarea {
+    width: 100%;
+    border: none;
+    padding: 1rem 1rem;
+}
+/* --------------------Footer----------------- */
 footer {
     display: flex;
+    flex-direction: column;
+    padding: 1rem 10rem;
 }
+.footerContent {
+    display: flex;
+    row-gap: 4rem;
+    gap: 4rem;
+    padding: 1rem;
+    border-bottom: 1px solid var(--text);
+}
+.footerAbout, .footerContact {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    justify-content: center;
+}
+.footerAbout {
+    width: 33%;
+}
+.footerContact {
+    margin-left: auto;
+}
+footer img {
+    width: 50px;
+}
+footer i {
+    color: var(--primary);
+    margin-right: 1rem;
+}
+.footerDetails {
+    padding: 1rem;
+    display: flex;
+}
+.socials {
+    margin-left: auto;
+    font-size: 2rem;
+}
+

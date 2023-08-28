@@ -18,15 +18,15 @@
                 <a href="" class="logoLink"><img src="logo-icon.png" class="logo" alt="Lucky Shrub logo">Lucky Shrub</a>
                 <nav>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="book.html">Book</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#book">Book</a></li>
+                        <li><a href="#about">About</a></li>
                     </ul>
                 </nav>
                 <button class="btn"><i class="fa-solid fa-phone-volume"></i>Call Us</button>
             </header>
-            <main>
+            <main id="home">
                 <section class="hero center">
                     <div class="heroContent">
                         <h1>Breathe Life Into Your Outdoor Paradise With Expert Garden Design and Landscaping Services</h1>
@@ -60,25 +60,70 @@
                 </section>
             </main>
         </div>
-        <section id="services" class="serviceSection">
+        <section id="services" class="serviceSection center">
             <div class="serviceItem">
+                <i class="fa-solid fa-sun-plant-wilt"></i>
                 <span>Skilled Gardening & Technicians</span>
             </div>
             <div class="serviceItem">
+                <i class="fa-solid fa-handshake-angle"></i>
                 <span>Awesome Customer Service</span>
             </div>
             <div class="serviceItem">
+                <i class="fa-solid fa-truck-droplet"></i>
                 <span>Irrigation and Drainage Service</span>
             </div>
         </section>
-        <section class="aboutSection">
-
-        </section>
-        <footer>
-            <div><img src="" alt="Lucky Shrub logo">
+        <section id="about" class="aboutSection center">
+            <div class="aboutImg">
+                <img src="pngegg.png" alt="">
             </div>
-            <div>
+            <div class="aboutText">
+                <span>About Us</span>
+                <h2>We Are A Professional Gardner And Lawn Service</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores hic fuga atque nesciunt perspiciatis quibusdam optio ex recusandae sapiente debitis ratione dolores repudiandae placeat voluptatem adipisci, officiis aspernatur inventore laboriosam.
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eaque rerum libero consequuntur dignissimos similique pariatur, ducimus placeat inventore quis deserunt officia possimus quos explicabo vero accusantium iure expedita accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eaque rerum libero consequuntur dignissimos similique pariatur, ducimus placeat inventore quis deserunt officia possimus quos explicabo vero accusantium iure expedita accusamus.</p>
+                <button class="btn">Get A Quote</button>
+            </div>
+        </section>
+        <section id="book" class="bookingSection center">
+            <h2>Book A Consultation</h2>
+            <form class="bookingForm" action="">
+                <label for="name">
+                    <input type="text" name="name" id="name" placeholder="Name">
+                </label>
+                <label for="email">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </label>
+                <label for="message">
+                    <textarea name="message" cols="40" rows="5" placeholder="Message"></textarea>
+                </label>
+                <button class="btn">Send</button>
+            </form>
+            
+        </section>
+        <footer class="bg-blur">
+            <div class="footerContent">
+                <div class="footerImg"><img src="logo.png" alt="Lucky Shrub logo"></div>
+                <section class="footerAbout">
+                    <h3>About Us</h3>
+                    <p>Lucky Shrub is a medium-sized garden design firm that specializes in garden design and creation, maintenance and landscaping.</p>
+                </section>
+                <section class="footerContact">
+                    <div class="contact"><i class="fa-solid fa-location-dot"></i> 1001 Imaginary St, WD 2804</div>
+                    <div class="contact"><i class="fa-solid fa-phone"></i> +1 234 567 8910</div>
+                    <div class="contact"><i class="fa-solid fa-envelope"></i> hello@luckyshrub.com</div>
+                </section>
+            </div>
+            <div class="footerDetails">
                 <p>Copyright Lucky Shrub</p>
+                <div class="socials">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+
             </div>
         </footer>
     </div>
